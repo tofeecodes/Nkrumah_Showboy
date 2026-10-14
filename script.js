@@ -21,7 +21,7 @@
   navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
 
   // active-link highlight on scroll
-  const sections = ['home','who','journey','sponsorship','content','ticketing','contact']
+  const sections = ['home','who','current-event','journey','sponsorship','content','ticketing','contact']
     .map(id => document.getElementById(id)).filter(Boolean);
   const navAnchors = Array.from(document.querySelectorAll('nav.links a[href^="#"]'));
   const setActive = () => {
